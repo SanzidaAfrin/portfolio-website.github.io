@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu+Mono&display=swap');
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--gray);
+}
+
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.user{
+    margin-top: 2rem;
+}
+    /* image style */
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .5rem solid #eb6003;
+}
+header .user .name{
+    font-size: 3.5rem;
+    color: #fff;
+}
+header .user .pone{
+    font-size: 2rem;
+    color: #eee;
+}
+    /* navbar style */
+header .navbar{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 6.5rem;
+}
+header .navbar ul li a{
+    color: #fff;
+    background: #333;
+    width: 22rem;
+    display: block;
+    padding: 0.5rem;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    border-radius: 5rem;
+    text-decoration: none;
+}
+header .navbar ul li a:hover{
+    background: #eb6003;
+    color: #111;
+}
+
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+/* home section */
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+.home h3{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.home h1{
+    font-size: 5rem;
+    color: #fff;
+}
+.home h1 span{
+    color: #eb6003;
+}
+.home p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    text-align: justify;
+}
+/* Button design */
+.btn{
+    color: #fff;
+    background-color: #333;
+    padding: 0.7rem 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.btn i{
+    padding: 0.5rem;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    background: #eb6003;
+    
+}
+
+/* heading style */
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .3rem solid rgb(48, 45, 45);
+    color: #fff;
+}
+.heading span{
+    color: #eb6003;
+}
+/* style about section */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.information{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.information  h3{
+    font-size: 2rem;
+    color: #eb6003;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.information h3 span{
+    color: #eee;
+    padding: 0.5rem;
+    text-transform: capitalize;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 48rem;
+}
+.counter .box{
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+.box span{
+    font-size: 4rem;
+    color: #eb6003;
+}
+.box h3{
+    font-size: 2rem;
+    color: #fff;
+}
+/* education style */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.descript{
+    border-left: 0.2rem solid #fff;
+    width: 27rem;
+    position: relative;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+}
+.descript span{
+    color: #fff;
+    background: #222;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+    padding: 0.5rem 2.5rem;
+}
+.descript h3{
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.descript p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+    /* text-align: justify; */
+}
+.descript i{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: #eb6003;
+}
+.picture{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.pone_galary{
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.pone_galary img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* skill section */
+.skills-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5vh;
+    /* padding: 0 80px; */
+}
+.size{
+    width: 50%;
+}
+.bars{
+    margin-bottom: 22px;
+}
+.info{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.info span{
+    font-weight: 500;
+    font-size: 18px;
+    color: #eb6003;
+    margin-bottom: -2rem;
+    /* margin-left: -6rem; */
+}
+.line{
+    align-items: center;
+    height: 5px;
+    border-radius: 6px;
+    width: 100%;
+    background: rgb(90, 85, 85);
+    position: relative;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #eb6003;
+}
+.html4::before{
+    width: 80%;
+}
+.css::before{
+    width: 70%;
+}
+.jquery::before{
+    width: 40%;
+}
+.javascript::before{
+    width: 45%;
+}
+.c::before{
+    width: 85%;
+}
+.cpp::before{
+    width: 65%;
+}
+.java::before{
+    width: 50%;
+}
+
+
+/* contact stylye */
+.contact-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.my_contact{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: -1rem;
+    
+}
+.title{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+.c_info h3{
+    display: flex;
+    align-items: center;
+    color: #eee;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.c_info h3 i{
+    color: #eb6003;
+    padding-right: 1rem;
+}
+form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+
+
+/* media queries */
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .home{
+        padding: 1rem 4rem;
+    }
+
+}
+
+@media(max-width:991px){
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width:400px){
+    header{
+        width: 100vw;
+    }
+    header .navbar ul{
+        padding: 1rem 10rem;
+    }
+    .heading{
+        margin: 0 3rem;
+    }
+    .box{
+        width: 100%;
+    }
+    .descript{
+        width: 100%;
+    }
+    .descript p{
+        font-size: 1.8rem;
+    }
+    .pone_galary{
+        width: 100%;
+    }
+    .skills-box{
+        width: 100%;
+    }
+    form{
+        margin: 3rem 0;
+    }
+
+}
